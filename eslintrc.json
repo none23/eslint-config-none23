@@ -1,4 +1,13 @@
-{ "extends": ["standard", "standard-react"]
+{ "extends": [ "standard"
+           , "standard-react"
+           ]
+, "parser": "babel-eslint"
+, "plugins": [ "standard"
+           , "react"
+           , "promise"
+           , "import"
+           , "node"
+           ]
 , "rules": { "comma-style": ["error", "first"]
          , "indent": ["error", 2, { "VariableDeclarator": { "var": 1, "let": 1, "const": 2 }, "CallExpression": { "arguments": "first" }, "ArrayExpression": "first", "ObjectExpression": "first" }]
          }

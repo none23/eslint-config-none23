@@ -1,0 +1,24 @@
+{ "name": "eslint-config-none23"
+, "version": "1.0.0"
+, "description": "My eslint config, based on standard"
+, "dependencies": { "eslint": "latest"
+                , "eslint-plugin-promise": "latest"
+                , "eslint-plugin-react": "latest"
+                , "eslint-plugin-standard": "latest"
+                , "eslint-config-standard": "latest"
+                , "eslint-config-standard-react": "latest"
+                }
+, "main": "index.js"
+, "license": "MIT"
+, "author": { "name": "none23"
+          , "email": "n.anisimov.23@gmail.com"
+          }
+, "repository": { "type": "git"
+              , "url": "git+https://github.com/none23/eslint-config-none23.git"
+              }
+}
+
+
+
+
+

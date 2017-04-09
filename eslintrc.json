@@ -1,16 +1,31 @@
-{ "extends": [ "standard"
-           , "standard-react"
-           ]
+{ "extends": [
+    "standard"
+  , "standard-react"
+  , "react-app"
+  ]
 , "parser": "babel-eslint"
-, "plugins": [ "standard"
-           , "react"
-           , "promise"
-           , "import"
-           , "node"
-           ]
-, "rules": { "comma-style": ["error", "first"]
-         , "indent": ["error", 2, { "VariableDeclarator": { "var": 1, "let": 1, "const": 2 }, "CallExpression": { "arguments": "first" }, "ArrayExpression": "first", "ObjectExpression": "first" }]
-         , "jsx-indent": ["error", 4]
-         , "jsx-indent-props": ["error", 2]
-         }
+, "plugins": [
+  , "flowtype"
+  , "import"
+  , "jsx-a11y"
+  , "node"
+  , "promise"
+  , "react"
+  , "standard"
+  ]
+, "rules": {
+    "comma-style": [ "error", "first" ]
+  , "indent": [ "error", 2, {
+      "VariableDeclarator": {
+          "var": 1
+        , "let": 1
+        , "const": 2
+      }
+    , "CallExpression": { "arguments": "first" }
+    , "ArrayExpression": "first"
+    , "ObjectExpression": "first"
+    }]
+  , "react/jsx-indent": [ "error", 4 ]
+  , "react/jsx-indent-props": [ "error", 2 ]
+  }
 }

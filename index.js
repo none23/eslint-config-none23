@@ -17,7 +17,7 @@ const config = {
     ecmaVersion: 8
   , sourceType: 'module'
   , ecmaFeatures: {
-    , experimentalObjectRestSpread: true
+      experimentalObjectRestSpread: true
     , generators: true
     , jsx: true
     }

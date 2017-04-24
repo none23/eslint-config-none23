@@ -40,7 +40,7 @@ const config = {
 }
 
 const rules = {
-, 'accessor-pairs': 'warn'
+  'accessor-pairs': 'warn'
 , 'array-callback-return': 'warn'
 , 'arrow-spacing': ['warn', {before: true, after: true}]
 , 'block-spacing': ['warn', 'always']

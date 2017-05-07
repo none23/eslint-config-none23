@@ -1,5 +1,5 @@
 { "name": "eslint-config-none23"
-, "version": "2.0.4"
+, "version": "2.0.6"
 , "description": "My eslint config, based on standard"
 , "peerDependencies": {
     "babel-eslint": "latest"

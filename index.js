@@ -221,7 +221,6 @@ const config = {
   , 'jsx-a11y/aria-role': 'warn'
   , 'jsx-a11y/role-has-required-aria-props': 'warn'
   , 'jsx-a11y/role-supports-aria-props': 'warn'
-  , 'jsx-a11y/img-has-alt': 'warn'
   , 'jsx-a11y/img-redundant-alt': 'warn'
   , 'jsx-a11y/no-access-key': 'warn'
   , 'node/no-deprecated-api': 'warn'
@@ -237,8 +236,7 @@ const config = {
   , 'react/jsx-no-bind': ['warn', {allowArrowFunctions: true, allowBind: false, ignoreRefs: true}]
   , 'react/jsx-no-duplicate-props': ['warn', { ignoreCase: true }]
   , 'react/jsx-no-undef': 'warn'
-  , 'react/jsx-pascal-case': ['warn', {allowAllCaps: true , ignore: []}]
-  , 'react/jsx-space-before-closing': 'warn'
+  , 'react/jsx-pascal-case': ['warn', {allowAllCaps: true, ignore: []}]
   , 'react/jsx-uses-vars': 'warn'
   , 'react/jsx-uses-react': 'warn'
   , 'react/no-danger-with-children': 'warn'

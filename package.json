@@ -1,18 +1,18 @@
 { "name": "eslint-config-none23"
-, "version": "2.0.6"
+, "version": "2.0.7"
 , "description": "My eslint config, based on standard"
 , "peerDependencies": {
-    "babel-eslint": "latest"
-  , "eslint": "latest"
+    "babel-eslint": "^7.1.1"
+  , "eslint": "^3.16.1"
   }
 , "dependencies": {
-    "eslint-plugin-flowtype": "latest"
-  , "eslint-plugin-import": "latest"
-  , "eslint-plugin-jsx-a11y": "latest"
-  , "eslint-plugin-node": "latest"
-  , "eslint-plugin-promise": "latest"
-  , "eslint-plugin-react": "latest"
-  , "eslint-plugin-standard": "latest"
+    "eslint-plugin-flowtype": "^2.32.1"
+  , "eslint-plugin-import": "^2.2.0"
+  , "eslint-plugin-jsx-a11y": "^5.0.1"
+  , "eslint-plugin-node": "^4.2.2"
+  , "eslint-plugin-promise": "^3.5.0"
+  , "eslint-plugin-react": "^7.0.0"
+  , "eslint-plugin-standard": "3.0.1"
   }
 , "bundledDependencies": [
     "eslint-plugin-flowtype"

@@ -22,20 +22,38 @@ const config = {
     , jsx: true
     }
   }
-, plugins: [
-    'flowtype'
-  , 'import'
-  , 'jsx-a11y'
-  , 'node'
-  , 'promise'
-  , 'react'
-  , 'standard'
+, extends: [
+    'eslint:recommended'
+  , 'plugin:flowtype/recommended'
+  , 'plugin:jest/recommended'
+  , 'plugin:jsx-a11y/recommended'
+  , 'plugin:promise/recommended'
+  , 'plugin:react/recommended'
+  , 'plugin:security/recommended'
   ]
 , settings: {
     'import/ignore': [ 'node_modules' ]
-  , 'import/extensions': ['.js']
-  , 'import/resolver': { node: { extensions: ['.js', '.json'] } }
+  , 'import/extensions': ['.js', '.json']
+  , 'import/resolver': {
+      webpack: {
+        extensions: ['.js', '.json']
+      }
+    , node: {
+        extensions: ['.js', '.json']
+      }
   }
+    }
+, plugins: [
+    'flowtype'
+  , 'jest'
+  , 'jsx-a11y'
+  , 'import'
+  , 'node'
+  , 'promise'
+  , 'react'
+  , 'security'
+  , 'standard'
+  ]
 , rules: {
     'accessor-pairs': 'warn'
   , 'array-callback-return': 'warn'
@@ -44,9 +62,9 @@ const config = {
   , 'brace-style': ['warn', '1tbs', {allowSingleLine: true}]
   , 'camelcase': ['warn', {properties: 'never'}]
   , 'class-methods-use-this': 'warn'
-  , 'comma-dangle': ['warn', {arrays: 'never', objects: 'never', imports: 'never', exports: 'never', functions: 'never'}]
+  , 'comma-dangle': ['warn', 'always-multiline']
   , 'comma-spacing': ['warn', {before: false, after: true}]
-  , 'comma-style': [ 'warn', 'first' ]
+  , 'comma-style': 0
   , 'constructor-super': 'warn'
   , 'curly': ['warn', 'multi-line']
   , 'default-case': ['warn', {commentPattern: '^no default$'}]
@@ -215,7 +233,6 @@ const config = {
   , 'import/no-webpack-loader-syntax': 'warn'
   , 'jsx-a11y/aria-props': 'warn'
   , 'jsx-a11y/heading-has-content': 'warn'
-  , 'jsx-a11y/href-no-hash': 'warn'
   , 'jsx-a11y/label-has-for': 'warn'
   , 'jsx-a11y/mouse-events-have-key-events': 'warn'
   , 'jsx-a11y/aria-role': 'warn'

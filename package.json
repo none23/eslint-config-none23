@@ -1,11 +1,12 @@
 {
     "name": "eslint-config-none23",
-    "version": "3.3.3",
-    "description": "My eslint config, based on standard",
+    "version": "4.0.1",
+    "description": "Eslint config, based on airbnb, with some usefull plugins for developing react apps.",
     "peerDependencies": {
         "babel-eslint": "^7.2.3",
         "eslint": "^4.3.0",
         "eslint-plugin-flowtype": "^2.35.0",
+        "eslint-plugin-flowtype-errors": "^3.3.2",
         "eslint-plugin-import": "^2.7.0",
         "eslint-plugin-jest": "^20.0.3",
         "eslint-plugin-jsx-a11y": "^6.0.2",
@@ -13,8 +14,13 @@
         "eslint-plugin-promise": "^3.5.0",
         "eslint-plugin-react": "^7.1.0",
         "eslint-plugin-security": "^1.4.0",
-        "eslint-plugin-standard": "^3.0.1"
+        "eslint-plugin-standard": "^3.0.1",
+        "flow-bin": "^0.56.0"
     },
+    "dependencies": {
+        "eslint-config-airbnb": "^15.1.0"
+    },
+    "devDependencies": {},
     "main": "index.js",
     "license": "MIT",
     "author": {

@@ -4,7 +4,7 @@
     "description": "Eslint config, based on airbnb, with some usefull plugins.",
     "peerDependencies": {
         "babel-eslint": "^7.2.3",
-        "eslint": "^4.12.1",
+        "eslint": "^4.13.0",
         "eslint-plugin-eslint-comments": "^2.0.1",
         "eslint-plugin-flowtype": "^2.39.0",
         "eslint-plugin-import": "^2.7.0",

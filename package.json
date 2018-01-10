@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-none23",
-    "version": "5.0.0",
+    "version": "5.1.0",
     "description": "Eslint config, based on airbnb, with some usefull plugins.",
     "peerDependencies": {
         "babel-eslint": "^7.2.3",
@@ -13,7 +13,7 @@
         "eslint-plugin-prettier": "^2.3.1",
         "eslint-plugin-promise": "^3.5.0",
         "eslint-plugin-react": "^7.4.0",
-        "flow-bin": "^0.60.1"
+        "flow-bin": "^0.62.0"
     },
     "dependencies": {
         "eslint-config-airbnb": "^16.1.0"

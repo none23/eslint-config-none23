@@ -1,32 +1,35 @@
 {
-    "name": "eslint-config-none23",
-    "version": "5.2.0",
-    "description": "Eslint config, based on airbnb, with some usefull plugins.",
-    "peerDependencies": {
-        "babel-eslint": "^8.2.2",
-        "eslint": "^4.19.0",
-        "eslint-plugin-eslint-comments": "^2.0.2",
-        "eslint-plugin-flowtype": "^2.46.1",
-        "eslint-plugin-import": "^2.9.0",
-        "eslint-plugin-jest": "^21.15.0",
-        "eslint-plugin-jsx-a11y": "^6.0.3",
-        "eslint-plugin-node": "^6.0.1",
-        "eslint-plugin-prettier": "^2.6.0",
-        "eslint-plugin-promise": "^3.7.0",
-        "eslint-plugin-react": "^7.7.0",
-        "flow-bin": "^0.68.0"
-    },
-    "dependencies": {
-        "eslint-config-airbnb": "^16.1.0"
-    },
-    "main": "index.js",
-    "license": "MIT",
-    "author": {
-        "name": "none23",
-        "email": "n.anisimov.23@gmail.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/none23/eslint-config-none23.git"
-    }
+  "name": "eslint-config-none23",
+  "version": "5.2.0",
+  "description": "Eslint config, based on airbnb, with some usefull plugins.",
+  "peerDependencies": {
+    "babel-eslint": "latest",
+    "eslint": "latest",
+    "eslint-plugin-eslint-comments": "latest",
+    "eslint-plugin-flowtype": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-jest": "latest",
+    "eslint-plugin-jsx-a11y": "latest",
+    "eslint-plugin-node": "latest",
+    "eslint-plugin-prettier": "latest",
+    "eslint-plugin-react": "latest",
+    "eslint-plugin-redux-saga": "latest",
+    "flow-bin": "latest"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^17.1.0"
+  },
+  "scripts": {
+    "prepublish": "npm install --package-lock-only"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "none23",
+    "email": "n.anisimov.23@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/none23/eslint-config-none23.git"
+  }
 }

@@ -1,0 +1,16 @@
+#!/bin/sh
+
+yarn add -D babel-eslint
+yarn add -D eslint
+yarn add -D eslint-plugin-eslint-comments
+yarn add -D eslint-plugin-flowtype
+yarn add -D eslint-plugin-import
+yarn add -D eslint-plugin-jest
+yarn add -D eslint-plugin-jsx-a11y
+yarn add -D eslint-plugin-node
+yarn add -D eslint-plugin-prettier
+yarn add -D eslint-plugin-promise
+yarn add -D eslint-plugin-react
+yarn add -D flow-bin
+
+# vim:filetype=sh

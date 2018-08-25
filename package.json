@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23",
-  "version": "5.3.0",
+  "version": "5.4.0",
   "description": "Eslint config, based on airbnb, with some usefull plugins.",
   "peerDependencies": {
     "babel-eslint": "latest",
@@ -23,6 +23,9 @@
     "prepublish": "npm install --package-lock-only"
   },
   "main": "index.js",
+  "bin": {
+    "install-eslint-config-none23": "./bin/install-eslint-config-none23"
+  },
   "license": "MIT",
   "author": {
     "name": "none23",

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23",
-  "version": "5.8.0-alpha",
+  "version": "5.8.0-alpha1",
   "description": "Eslint config, based on airbnb, with some usefull plugins.",
   "peerDependencies": {
     "babel-eslint": "^10.0.1",

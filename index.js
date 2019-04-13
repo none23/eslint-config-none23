@@ -1,5 +1,3 @@
-const path = require('path');
-
 const config = {
   parser: 'babel-eslint',
   parserOptions: {
@@ -11,6 +9,7 @@ const config = {
       jsx: true,
     },
   },
+  // eslint-disable-next-line unicorn/prevent-abbreviations
   env: {
     browser: true,
     jest: true,
@@ -45,8 +44,8 @@ const config = {
   ],
 
   rules: {
-    'no-console': 'err',
-    'no-debugger': 'err',
+    'no-console': 'error',
+    'no-debugger': 'error',
     'no-multiple-empty-lines': ['error', { max: 3, maxEOF: 0 }],
     'no-underscore-dangle': 'off',
     'no-unused-expressions': [

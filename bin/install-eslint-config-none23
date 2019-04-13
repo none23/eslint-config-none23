@@ -1,16 +1,18 @@
-#!/bin/sh
+#!/bin/zsh
+
 
 yarn add -D babel-eslint \
-    -D eslint \
-    -D eslint-plugin-eslint-comments \
-    -D eslint-plugin-flowtype \
-    -D eslint-plugin-import \
-    -D eslint-plugin-jest \
-    -D eslint-plugin-jsx-a11y \
-    -D eslint-plugin-node \
-    -D eslint-plugin-prettier \
-    -D eslint-plugin-promise \
-    -D eslint-plugin-react \
-    -D flow-bin \
+  eslint \
+  eslint-plugin-eslint-comments \
+  eslint-plugin-flowtype \
+  eslint-plugin-import \
+  eslint-plugin-graphql \
+  eslint-plugin-jsx-a11y \
+  eslint-plugin-prettier \
+  eslint-plugin-promise \
+  eslint-plugin-react \
+  eslint-plugin-sonarjs \
+  flow-bin \
+  prettier
 
-# vim:filetype=sh
+# vim:filetype=zsh

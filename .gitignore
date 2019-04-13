@@ -2,9 +2,10 @@
 logs
 *.log
 npm-debug.log*
+yarn-error*
 
 # Runtime data
-pids
+.eslintcache
 *.pid
 *.seed
 

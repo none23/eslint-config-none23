@@ -9,7 +9,6 @@ const config = {
       jsx: true,
     },
   },
-  // eslint-disable-next-line unicorn/prevent-abbreviations
   env: {
     browser: true,
     jest: true,
@@ -112,6 +111,7 @@ const config = {
 
     'unicorn/filename-case': 'off',
     'unicorn/catch-error-name': ['error', { name: 'err' }],
+    'unicorn/prevent-abbreviations': 'off',
   },
 };
 

@@ -38,7 +38,6 @@ const config = {
     'eslint-comments',
     'flowtype',
     'import',
-    'graphql',
     'jsx-a11y',
     'react',
     'sonarjs',
@@ -94,6 +93,13 @@ const config = {
     // 'node/no-deprecated-api': 'error',
     // 'node/process-exit-as-throw': 'error',
 
+    'flowtype/define-flow-type': 'error',
+    'flowtype/require-valid-file-annotation': 'error',
+    'flowtype/use-flow-type': 'error',
+    'flowtype/array-style-complex-type': ['error', 'verbose'],
+    'flowtype/array-style-simple-type': ['error', 'verbose'],
+
+    'react/jsx-indent': 'off',
     'react/require-default-props': 'off',
     'react/forbid-prop-types': ['error', { forbid: ['any'] }],
     'react/default-props-match-prop-types': 'off', // Flow
@@ -102,14 +108,6 @@ const config = {
     'react/no-array-index-key': 'off',
     'react/no-unused-prop-types': 'off', // Flow
     'react/prefer-stateless-function': 'off',
-
-    'flowtype/define-flow-type': 'error',
-    'flowtype/require-valid-file-annotation': 'error',
-    'flowtype/use-flow-type': 'error',
-    'flowtype/array-style-complex-type': ['error', 'verbose'],
-    'flowtype/array-style-simple-type': ['error', 'verbose'],
-
-    'react/jsx-indent': 'off',
     'react/jsx-indent-props': 'off',
     'react/jsx-wrap-multilinis': 'off',
 

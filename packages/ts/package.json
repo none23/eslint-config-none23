@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23ts",
-  "version": "8.1.0",
+  "version": "8.1.1",
   "description": "My eslint config (TS version)",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^1.7.0",

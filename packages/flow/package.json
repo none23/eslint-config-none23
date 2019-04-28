@@ -2,9 +2,13 @@
   "name": "eslint-config-none23",
   "version": "8.1.1",
   "description": "My eslint config",
+  "peerDependencies": {
+    "eslint": "^5.16.0",
+    "flow-bin": "^0.98.0",
+    "prettier": "^1.17.0"
+  },
   "dependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.2.0",
     "eslint-plugin-flowtype": "^3.6.0",
@@ -14,9 +18,7 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.6.0",
     "eslint-plugin-sonarjs": "^0.3.0",
-    "eslint-plugin-unicorn": "^8.0.2",
-    "flow-bin": "^0.98.0",
-    "prettier": "^1.17.0"
+    "eslint-plugin-unicorn": "^8.0.2"
   },
   "main": "index.js",
   "license": "MIT",

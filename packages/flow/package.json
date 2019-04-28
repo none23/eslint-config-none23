@@ -1,10 +1,12 @@
 {
-  "name": "eslint-config-none23-flow",
-  "version": "8.0.0",
+  "name": "eslint-config-none23",
+  "version": "8.1.0-alpha",
   "description": "My eslint config",
-  "peerDependencies": {
+  "dependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
+    "eslint-config-airbnb": "latest",
+    "eslint-config-prettier": "latest",
     "eslint-plugin-flowtype": "^3.6.0",
     "eslint-plugin-import": "^2.15.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
@@ -16,14 +18,7 @@
     "flow-bin": "^0.98.0",
     "prettier": "^1.17.0"
   },
-  "dependencies": {
-    "eslint-config-airbnb": "latest",
-    "eslint-config-prettier": "latest"
-  },
   "main": "index.js",
-  "bin": {
-    "install-eslint-config-none23": "./bin/install-eslint-config-none23"
-  },
   "license": "MIT",
   "author": {
     "name": "none23",
@@ -32,5 +27,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/none23/eslint-config-none23.git"
-  }
+  },
+  "gitHead": "40be3488fc5a44e2bd7b9d49ce345474b4af62c5"
 }

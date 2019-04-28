@@ -1,11 +1,13 @@
 {
-  "name": "eslint-config-none23-ts",
-  "version": "8.0.0",
+  "name": "eslint-config-none23ts",
+  "version": "8.1.0",
   "description": "My eslint config (TS version)",
-  "peerDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^1.7.0",
     "@typescript-eslint/parser": "^1.7.0",
     "eslint": "^5.16.0",
+    "eslint-config-airbnb": "latest",
+    "eslint-config-prettier": "latest",
     "eslint-plugin-import": "^2.15.0",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
@@ -16,10 +18,6 @@
     "prettier": "^1.17.0",
     "typescript": "^3.4.4"
   },
-  "dependencies": {
-    "eslint-config-airbnb": "latest",
-    "eslint-config-prettier": "latest"
-  },
   "main": "index.ts",
   "license": "MIT",
   "author": {
@@ -29,5 +27,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/none23/eslint-config-none23.git"
-  }
+  },
+  "gitHead": "40be3488fc5a44e2bd7b9d49ce345474b4af62c5"
 }

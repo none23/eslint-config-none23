@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23",
-  "version": "8.1.2",
+  "version": "8.1.3",
   "description": "My eslint config",
   "peerDependencies": {
     "eslint": "^5.16.0",

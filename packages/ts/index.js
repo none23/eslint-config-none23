@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   parser: "@typescript-eslint/parser",
   env: {
     browser: true,
@@ -23,6 +23,7 @@ export default {
 
   plugins: [
     "import",
+    "eslint-comments",
     "jsx-a11y",
     "react",
     "import",
@@ -30,7 +31,7 @@ export default {
     "react",
     "react-hooks",
     "sonarjs",
-    "unicorn"
+    "unicorn",
   ],
 
   rules: {

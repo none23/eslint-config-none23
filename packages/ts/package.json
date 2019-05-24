@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "eslint": "^5.16.0",
+    "husky": "^2.3.0",
     "prettier": "^1.17.1",
     "typescript": "^3.4.5"
   },
@@ -26,6 +27,22 @@
     "eslint-plugin-react-hooks": "^1.6.0",
     "eslint-plugin-sonarjs": "^0.3.0",
     "eslint-plugin-unicorn": "^8.0.2"
+  },
+  "scripts": {
+    "flow": "flow focus-check",
+    "lint": "eslint --report-unused-disable-directives --quiet --cache --cache-location node_modules/.eslintcache",
+    "lintfix": "yarn lint --fix"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn flow",
+      "yarn lintfix",
+      "git-add"
+    ],
+    "*": [
+      "prettier",
+      "git-add"
+    ]
   },
   "main": "index.js",
   "license": "MIT",

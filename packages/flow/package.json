@@ -4,8 +4,10 @@
   "description": "My eslint config",
   "devDependencies": {
     "eslint": "^5.16.0",
-    "flow-bin": "^0.98.1",
-    "prettier": "^1.17.1"
+    "prettier": "^1.17.1",
+    "lint-staged": "^8.1.6",
+    "husky": "^2.3.0",
+    "pre-commit": "^1.2.2"
   },
   "peerDependencies": {
     "eslint": "^5.16.0",
@@ -26,12 +28,29 @@
     "eslint-plugin-sonarjs": "^0.3.0",
     "eslint-plugin-unicorn": "^8.0.2"
   },
-  "main": "index.js",
   "license": "MIT",
   "author": {
     "name": "none23",
     "email": "n.anisimov.23@gmail.com"
   },
+  "scripts": {
+    "flow": "flow focus-check",
+    "lint": "eslint --report-unused-disable-directives --quiet --cache --cache-location node_modules/.eslintcache",
+    "lintfix": "yarn lint --fix"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn flow",
+      "yarn lintfix",
+      "git-add"
+    ],
+    "*": [
+      "prettier",
+      "git-add"
+    ]
+  },
+  "main": "index.js",
+  "pre-commit": "lint-staged",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/none23/eslint-config-none23.git"

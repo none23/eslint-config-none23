@@ -21,6 +21,7 @@ module.exports = {
     'prettier/flowtype',
     'plugin:flowtype/recommended',
   ],
+
   settings: {
     'import/resolver': {
       'babel-module': {},

@@ -8,7 +8,6 @@ module.exports = {
     'plugin:react/recommended',
     'prettier/react',
     'prettier/unicorn',
-    'plugin:flowtype/recommended',
   ],
   settings: {
     'import/resolver': {
@@ -73,11 +72,6 @@ module.exports = {
     // 'node/no-deprecated-api': 'error',
     // 'node/process-exit-as-throw': 'error',
 
-    'flowtype/define-flow-type': 'error',
-    'flowtype/require-valid-file-annotation': 'error',
-    'flowtype/use-flow-type': 'error',
-    'flowtype/array-style-complex-type': ['error', 'verbose'],
-    'flowtype/array-style-simple-type': ['error', 'verbose'],
 
     'react/jsx-indent': 'off',
     'react/require-default-props': 'off',

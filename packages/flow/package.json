@@ -4,8 +4,8 @@
   "description": "My eslint config",
   "devDependencies": {
     "eslint": "^6.1.0",
-    "husky": "^3.0.3",
     "flow-bin": "^0.105.0",
+    "husky": "^3.0.3",
     "lint-staged": "^9.2.1",
     "pre-commit": "^1.2.2",
     "prettier": "^1.18.2"

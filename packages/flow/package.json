@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23",
-  "version": "8.2.1",
+  "version": "8.2.2",
   "description": "My eslint config",
   "devDependencies": {
     "eslint": "^6.1.0",

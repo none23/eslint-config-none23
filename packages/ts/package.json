@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23ts",
-  "version": "8.2.3",
+  "version": "8.2.4",
   "description": "My eslint config (TS version)",
   "peerDependencies": {
     "eslint": "^6.1.0",

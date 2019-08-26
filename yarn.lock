@@ -978,9 +978,9 @@
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
 "@types/node@*":
-  version "12.7.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.1.tgz#3b5c3a26393c19b400844ac422bd0f631a94d69d"
-  integrity sha512-aK9jxMypeSrhiYofWWBf/T7O+KwaiAHzM4sveCdWPn71lzUSMimRnKzhXDKfKwV1kWoBo2P1aGgaIYGLf9/ljw==
+  version "12.7.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.7.2.tgz#c4e63af5e8823ce9cc3f0b34f7b998c2171f0c44"
+  integrity sha512-dyYO+f6ihZEtNPDcWNR1fkoTDf3zAK3lAABDze3mz6POyIercH0lEUawUFXlG8xaQZmm1yEBON/4TsYv/laDYg==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -1308,16 +1308,16 @@ axobject-query@^2.0.2:
     ast-types-flow "0.0.7"
 
 babel-eslint@^10.0.2:
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-10.0.2.tgz#182d5ac204579ff0881684b040560fdcc1558456"
-  integrity sha512-UdsurWPtgiPgpJ06ryUnuaSXC2s0WoSZnQmEpbAH65XZSdwowgN5MvyP7e88nW07FYXv72erVtpBkxyDVKhH1Q==
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/babel-eslint/-/babel-eslint-10.0.3.tgz#81a2c669be0f205e19462fed2482d33e4687a88a"
+  integrity sha512-z3U7eMY6r/3f3/JB9mTsLjyxrv0Yb1zb8PCWCLpguxfCzBIZUwy23R1t/XKewP+8mEN2Ck8Dtr4q20z6ce6SoA==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/parser" "^7.0.0"
     "@babel/traverse" "^7.0.0"
     "@babel/types" "^7.0.0"
-    eslint-scope "3.7.1"
     eslint-visitor-keys "^1.0.0"
+    resolve "^1.12.0"
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -2264,14 +2264,6 @@ eslint-module-utils@^2.4.0:
     debug "^2.6.8"
     pkg-dir "^2.0.0"
 
-eslint-plugin-eslint-comments@^3.1.2:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-eslint-comments/-/eslint-plugin-eslint-comments-3.1.2.tgz#4ef6c488dbe06aa1627fea107b3e5d059fc8a395"
-  integrity sha512-QexaqrNeteFfRTad96W+Vi4Zj1KFbkHHNMMaHZEYcovKav6gdomyGzaxSDSL3GoIyUOo078wRAdYlu1caiauIQ==
-  dependencies:
-    escape-string-regexp "^1.0.5"
-    ignore "^5.0.5"
-
 eslint-plugin-flowtype@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-4.2.0.tgz#a89ac991eef6753226eb8871261e266645aca4b9"
@@ -2360,14 +2352,6 @@ eslint-plugin-unicorn@^10.0.0:
     regexpp "^2.0.1"
     reserved-words "^0.1.2"
     safe-regex "^2.0.2"
-
-eslint-scope@3.7.1:
-  version "3.7.1"
-  resolved "https://registry.yarnpkg.com/eslint-scope/-/eslint-scope-3.7.1.tgz#3d63c3edfda02e06e01a452ad88caacc7cdcb6e8"
-  integrity sha1-PWPD7f2gLgbgGkUq2IyqzHzctug=
-  dependencies:
-    esrecurse "^4.1.0"
-    estraverse "^4.1.1"
 
 eslint-scope@^4.0.0:
   version "4.0.3"
@@ -3188,7 +3172,7 @@ ignore@^4.0.3, ignore@^4.0.6:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
   integrity sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==
 
-ignore@^5.0.5, ignore@^5.1.1:
+ignore@^5.1.1:
   version "5.1.4"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.4.tgz#84b7b3dbe64552b6ef0eca99f6743dbec6d97adf"
   integrity sha512-MzbUSahkTW1u7JpKKjY7LCARd1fU5W2rLdxlM4kdkayuCwZImjkpluF9CM1aLewYJguPDqewLam18Y6AU69A8A==
@@ -3758,9 +3742,9 @@ lines-and-columns@^1.1.6:
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
 lint-staged@^9.2.1:
-  version "9.2.3"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-9.2.3.tgz#a4ef2b7033f83e8dbc718556610e20e0098356c0"
-  integrity sha512-ovDmF0c0VJDTP0VmwLetJQ+lVGyNqOkTniwO9S0MOJxGxIExpSRTL56/ZmvXZ1tHNA53GBbXQbfS8RnNGRXFjg==
+  version "9.2.4"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-9.2.4.tgz#7a35839c9c6103ec98eabf43e35657c209509345"
+  integrity sha512-RAt5ogbLRiKy9+T3dKbbPKP6tN2I9VjEtTXQFxdkauUdMjIBsS70ikwwSgsBR8xVVCUSX7sVDyWCyem5xB8YDw==
   dependencies:
     chalk "^2.4.2"
     commander "^2.20.0"
@@ -5405,7 +5389,7 @@ resolve-url@^0.2.1:
   resolved "https://registry.yarnpkg.com/resolve-url/-/resolve-url-0.2.1.tgz#2c637fe77c893afd2a663fe21aa9080068e2052a"
   integrity sha1-LGN/53yJOv0qZj/iGqkIAGjiBSo=
 
-resolve@^1.10.0, resolve@^1.10.1, resolve@^1.11.0, resolve@^1.4.0, resolve@^1.5.0:
+resolve@^1.10.0, resolve@^1.10.1, resolve@^1.11.0, resolve@^1.12.0, resolve@^1.4.0, resolve@^1.5.0:
   version "1.12.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.12.0.tgz#3fc644a35c84a48554609ff26ec52b66fa577df6"
   integrity sha512-B/dOmuoAik5bKcD6s6nXDCjzUKnaDvdkRyAk6rsmsKLipWj4797iothd7jmmUhWTfinVMU+wc56rYKsit2Qy4w==

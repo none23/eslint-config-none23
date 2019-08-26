@@ -3,9 +3,9 @@
   "version": "8.2.3",
   "description": "My eslint config (TS version)",
   "peerDependencies": {
-    "eslint": "^5.16.0",
-    "prettier": "^1.17.1",
-    "typescript": "^3.4.5"
+    "eslint": "^6.1.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.3"
   },
   "devDependencies": {
     "eslint": "^6.1.0",

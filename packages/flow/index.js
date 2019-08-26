@@ -29,7 +29,6 @@ module.exports = {
   },
 
   plugins: [
-    'eslint-comments',
     'flowtype',
     'import',
     'jsx-a11y',

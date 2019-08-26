@@ -15,7 +15,6 @@ module.exports = {
     },
   },
   plugins: [
-    'eslint-comments',
     'import',
     'jsx-a11y',
     'react',
@@ -49,8 +48,8 @@ module.exports = {
     'padded-blocks': ['error', { blocks: 'never', switches: 'never', classes: 'never' }],
     'prefer-const': 'error',
 
-    'eslint-comments/no-unused-disable': 'error',
-    'eslint-comments/no-unused-enable': 'error',
+    // 'eslint-comments/no-unused-disable': 'error',
+    // 'eslint-comments/no-unused-enable': 'error',
 
     'import/default': 'error',
     'import/named': 'error',

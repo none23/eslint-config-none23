@@ -12,7 +12,7 @@
   },
   "peerDependencies": {
     "eslint": "^6.1.0",
-    "flow-bin": "^0.105.0",
+    "flow-bin": "^0.106.1",
     "prettier": "^1.18.2"
   },
   "dependencies": {

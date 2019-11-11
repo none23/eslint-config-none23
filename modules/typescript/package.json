@@ -1,0 +1,35 @@
+{
+  "name": "eslint-config-none23-typescript",
+  "version": "9.0.0-alpha",
+  "description": "Base eslint config for typescript",
+  "main": "typescript.js",
+  "license": "MIT",
+  "author": {
+    "name": "none23",
+    "email": "n.anisimov.23@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/none23/eslint-config-none23.git",
+    "directory": "modules/typescript"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0",
+    "eslint-config-none23-base": "9.0.0-alpha",
+    "eslint-import-resolver-typescript": "^2.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^6.6.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.7.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "flow focus-check",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "gitHead": "40be3488fc5a44e2bd7b9d49ce345474b4af62c5"
+}

@@ -2,10 +2,11 @@
   "name": "root",
   "version": "0.0.0",
   "private": true,
-  "workspaces":[
-    "packages/*"
+  "workspaces": [
+    "modules/*"
   ],
   "devDependencies": {
-    "lerna": "^3.13.4"
+    "flow-bin": "^0.111.3",
+    "lerna": "^3.18.4"
   }
 }

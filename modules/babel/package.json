@@ -1,0 +1,39 @@
+{
+  "name": "eslint-config-none23-babel",
+  "version": "9.0.0-alpha",
+  "description": "Base config using babel",
+  "main": "babel.js",
+  "license": "MIT",
+  "author": {
+    "name": "Nick Anisimov",
+    "email": "n.anisimov.23@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/none23/eslint-config-none23.git",
+    "directory": "modules/babel"
+  },
+  "dependencies": {
+    "babel-eslint": "^11.0.0-beta.0",
+    "eslint-config-none23-base": "^9.0.0-alpha",
+    "eslint-import-resolver-babel-module": "^5.1.0"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.7.0",
+    "eslint": "^6.6.0",
+    "prettier": "^1.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "flow-bin": "^0.111.3",
+    "prettier": "^1.18.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "flow focus-check",
+      "eslint --report-unused-disable-directives --quiet --fix",
+      "git-add"
+    ]
+  },
+  "gitHead": "40be3488fc5a44e2bd7b9d49ce345474b4af62c5"
+}

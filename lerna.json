@@ -1,8 +1,6 @@
 {
-  "version": "8.2.4",
-  "packages": [
-    "packages/*"
-  ],
+  "version": "fixed",
+  "packages": ["modules/*"],
   "npmClient": "yarn",
   "useWorkspaces": true
 }

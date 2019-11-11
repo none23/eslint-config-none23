@@ -1,0 +1,45 @@
+{
+  "name": "eslint-config-none23-react",
+  "version": "9.0.0-alpha",
+  "description": "Eslint config for react",
+  "license": "MIT",
+  "main": "react.js",
+  "author": {
+    "name": "none23",
+    "email": "n.anisimov.23@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/none23/eslint-config-none23.git",
+    "directory": "modules/react"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "flow-bin": "^0.111.3",
+    "prettier": "^1.18.2"
+  },
+  "peerDependencies": {
+    "eslint": "^6.6.0",
+    "prettier": "^1.18.2"
+  },
+  "optionalDependencies": {
+    "eslint-config-none23-typescript": "9.0.0-alpha",
+    "eslint-config-none23-flow": "9.0.0-alpha"
+  },
+  "dependencies": {
+    "eslint-plugin-emotion": "^10.0.14",
+    "eslint-plugin-graphql": "^3.1.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.1.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "flow focus-check",
+      "eslint --report-unused-disable-directives --quiet --fix",
+      "git add"
+    ]
+  },
+  "pre-commit": "lint-staged",
+  "gitHead": "40be3488fc5a44e2bd7b9d49ce345474b4af62c5"
+}

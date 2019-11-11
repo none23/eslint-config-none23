@@ -1,0 +1,42 @@
+{
+  "name": "eslint-config-none23-flow",
+  "version": "9.0.0-alpha",
+  "description": "My eslint config using flow",
+  "main": "flow.js",
+  "license": "MIT",
+  "author": {
+    "name": "Nick Anisimov",
+    "email": "n.anisimov.23@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/none23/eslint-config-none23.git",
+    "directory": "modules/flow"
+  },
+  "dependencies": {
+    "eslint-config-none23-babel": "9.0.0-alpha",
+    "eslint-plugin-flowtype": "^4.3.0"
+  },
+  "peerDependencies": {
+    "eslint": "^6.6.0",
+    "flow-bin": "^0.111.3",
+    "prettier": "^1.18.2"
+  },
+  "optionalDependencies": {
+    "eslint-config-none23-react": "9.0.0-alpha"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "flow-bin": "^0.111.3",
+    "prettier": "^1.18.2"
+  },
+  "lint-staged": {
+    "*.js": [
+      "flow",
+      "eslint --report-unused-disable-directives --quiet --fix",
+      "git-add"
+    ]
+  },
+  "pre-commit": "lint-staged",
+  "gitHead": "40be3488fc5a44e2bd7b9d49ce345474b4af62c5"
+}

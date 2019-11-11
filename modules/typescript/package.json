@@ -16,7 +16,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.4.0",
     "@typescript-eslint/parser": "^2.4.0",
-    "eslint-config-none23-base": "9.0.0-alpha.0",
+    "eslint-config-none23-base": "^9.0.0-alpha.0",
     "eslint-import-resolver-typescript": "^2.0.0"
   },
   "peerDependencies": {

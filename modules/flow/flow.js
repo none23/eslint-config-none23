@@ -11,6 +11,6 @@ module.exports = {
     'flowtype/require-valid-file-annotation': 'error',
     'flowtype/use-flow-type': 'error',
     'flowtype/array-style-complex-type': ['error', 'verbose'],
-    'flowtype/array-style-simple-type': ['error', 'simple'],
+    'flowtype/array-style-simple-type': ['error', 'verbose'],
   },
 };

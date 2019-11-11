@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23react",
-  "version": "9.0.0-alpha.3",
+  "version": "9.0.0-alpha.4",
   "description": "Eslint config for react",
   "license": "MIT",
   "main": "react.js",
@@ -23,7 +23,7 @@
     "prettier": "^1.18.2"
   },
   "optionalDependencies": {
-    "eslint-config-none23flow": "^9.0.0-alpha.3",
+    "eslint-config-none23flow": "^9.0.0-alpha.4",
     "eslint-config-none23typescript": "^9.0.0-alpha.3"
   },
   "dependencies": {

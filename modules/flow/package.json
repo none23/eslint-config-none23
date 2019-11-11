@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23flow",
-  "version": "9.0.0-alpha.3",
+  "version": "9.0.0-alpha.4",
   "description": "My eslint config using flow",
   "main": "flow.js",
   "license": "MIT",

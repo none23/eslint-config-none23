@@ -14,16 +14,13 @@
     "directory": "modules/flow"
   },
   "dependencies": {
-    "eslint-config-none23-babel": "9.0.0-alpha.0",
+    "eslint-config-none23-babel": "^9.0.0-alpha.0",
     "eslint-plugin-flowtype": "^4.3.0"
   },
   "peerDependencies": {
     "eslint": "^6.6.0",
     "flow-bin": "^0.111.3",
     "prettier": "^1.18.2"
-  },
-  "optionalDependencies": {
-    "eslint-config-none23-react": "9.0.0-alpha.0"
   },
   "devDependencies": {
     "eslint": "^6.6.0",

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23-typescript",
-  "version": "9.0.0-alpha",
+  "version": null,
   "description": "Base eslint config for typescript",
   "main": "typescript.js",
   "license": "MIT",

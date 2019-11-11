@@ -1,6 +1,8 @@
 {
-  "version": "fixed",
-  "packages": ["modules/*"],
+  "version": null,
+  "packages": [
+    "modules/*"
+  ],
   "npmClient": "yarn",
   "useWorkspaces": true
 }

@@ -7,6 +7,7 @@ module.exports = {
   extends: [...babelConfig.extends, 'prettier/flowtype', 'plugin:flowtype/recommended'],
   plugins: [...babelConfig.plugins, 'flowtype'],
   rules: {
+    ...babelConfig.rules,
     'flowtype/define-flow-type': 'error',
     'flowtype/require-valid-file-annotation': 'error',
     'flowtype/use-flow-type': 'error',

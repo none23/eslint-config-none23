@@ -2,7 +2,7 @@
 
 module.exports = {
   extends: ['plugin:react/recommended', 'prettier/react'],
-  plugins: ['jsx-a11y', 'graphql', 'emotion', 'react', 'react-hooks'],
+  plugins: ['jsx-a11y', 'emotion', 'react', 'react-hooks'],
   rules: {
     'no-unused-vars': [
       'error',
@@ -12,7 +12,7 @@ module.exports = {
     'emotion/jsx-import': 'error',
     'emotion/syntax-preference': ['error', 'object'],
 
-    'graphql/template-strings': ['error', { env: 'apollo', validators: 'all' }],
+    // 'graphql/template-strings': ['error', { env: 'apollo', validators: 'all' }],
 
     'jsx-a11y/anchor-is-valid': 'off', // next.js
     'jsx-a11y/aria-props': 'error',

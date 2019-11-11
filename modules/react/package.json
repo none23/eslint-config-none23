@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23react",
-  "version": "9.0.0-alpha.4",
+  "version": "9.0.0-alpha.5",
   "description": "Eslint config for react",
   "license": "MIT",
   "main": "react.js",

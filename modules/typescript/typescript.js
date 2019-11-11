@@ -1,6 +1,6 @@
 // @flow strict
 
-const baseConfig = require('eslint-config-none23-base');
+const baseConfig = require('eslint-config-none23base');
 
 module.exports = {
   ...baseConfig,

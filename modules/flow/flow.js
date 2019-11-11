@@ -1,6 +1,6 @@
 // @flow strict
 
-const babelConfig = require('eslint-config-none23-babel');
+const babelConfig = require('eslint-config-none23babel');
 
 module.exports = {
   ...babelConfig,

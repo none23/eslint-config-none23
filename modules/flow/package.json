@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23flow",
-  "version": "9.0.0-alpha.2",
+  "version": "9.0.0-alpha.3",
   "description": "My eslint config using flow",
   "main": "flow.js",
   "license": "MIT",
@@ -14,7 +14,7 @@
     "directory": "modules/flow"
   },
   "dependencies": {
-    "eslint-config-none23babel": "^9.0.0-alpha.2",
+    "eslint-config-none23babel": "^9.0.0-alpha.3",
     "eslint-plugin-flowtype": "^4.3.0"
   },
   "peerDependencies": {

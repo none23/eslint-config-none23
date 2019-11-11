@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23babel",
-  "version": "9.0.0-alpha.2",
+  "version": "9.0.0-alpha.3",
   "description": "Base config using babel",
   "main": "babel.js",
   "license": "MIT",

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23base",
-  "version": "9.0.0-alpha.1",
+  "version": "9.0.0-alpha.2",
   "description": "Base config",
   "main": "base.js",
   "license": "MIT",

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23babel",
-  "version": "9.0.0-alpha.1",
+  "version": "9.0.0-alpha.2",
   "description": "Base config using babel",
   "main": "babel.js",
   "license": "MIT",
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "babel-eslint": "^11.0.0-beta.0",
-    "eslint-config-none23base": "^9.0.0-alpha.1",
+    "eslint-config-none23base": "^9.0.0-alpha.2",
     "eslint-import-resolver-babel-module": "^5.1.0"
   },
   "peerDependencies": {

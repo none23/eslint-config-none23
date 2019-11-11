@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-none23-flow",
+  "name": "eslint-config-none23flow",
   "version": "9.0.0-alpha.1",
   "description": "My eslint config using flow",
   "main": "flow.js",
@@ -14,7 +14,7 @@
     "directory": "modules/flow"
   },
   "dependencies": {
-    "eslint-config-none23-babel": "^9.0.0-alpha.1",
+    "eslint-config-none23babel": "^9.0.0-alpha.1",
     "eslint-plugin-flowtype": "^4.3.0"
   },
   "peerDependencies": {
@@ -35,5 +35,5 @@
     ]
   },
   "pre-commit": "lint-staged",
-  "gitHead": "40be3488fc5a44e2bd7b9d49ce345474b4af62c5"
+  "gitHead": "a1c2972f11f7bb69837de5d51f2604e457db2d2c"
 }

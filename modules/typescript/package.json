@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-none23-typescript",
+  "name": "eslint-config-none23typescript",
   "version": "9.0.0-alpha.1",
   "description": "Base eslint config for typescript",
   "main": "typescript.js",
@@ -16,7 +16,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.4.0",
     "@typescript-eslint/parser": "^2.4.0",
-    "eslint-config-none23-base": "^9.0.0-alpha.1",
+    "eslint-config-none23base": "^9.0.0-alpha.1",
     "eslint-import-resolver-typescript": "^2.0.0"
   },
   "peerDependencies": {
@@ -31,5 +31,5 @@
       "git add"
     ]
   },
-  "gitHead": "40be3488fc5a44e2bd7b9d49ce345474b4af62c5"
+  "gitHead": "a1c2972f11f7bb69837de5d51f2604e457db2d2c"
 }

@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23",
-  "version": "10.0.0-beta.1",
+  "version": "10.0.0-beta.2",
   "description": "My eslint config for react with typescript and/or flow",
   "main": "eslint-config-none23.js",
   "files": [
@@ -23,7 +23,7 @@
     "prettier": "^1.19.1"
   },
   "peerDependencies": {
-    "babel-plugin-module-resolver-babel-module": "^5.1.0",
+    "babel-plugin-module-resolver": "^5.1.0",
     "eslint": "^6",
     "flow-bin": ">=0.114",
     "prettier": ">=1.19",

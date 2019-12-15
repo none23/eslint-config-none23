@@ -1,12 +1,59 @@
 {
-  "name": "root",
-  "version": "0.0.0",
-  "private": true,
-  "workspaces": [
-    "modules/*"
+  "name": "eslint-config-none23",
+  "version": "10.0.0",
+  "description": "My eslint config for react with typescript and/or flow",
+  "main": "eslint-config-none23.js",
+  "files": [
+    "eslint-config-none23.js",
+    "babel-config.js"
   ],
+  "license": "MIT",
+  "author": {
+    "name": "Nick Anisimov",
+    "email": "n.anisimov.23@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/none23/eslint-config-none23.git"
+  },
   "devDependencies": {
-    "flow-bin": "^0.111.3",
-    "lerna": "^3.18.4"
+    "eslint": "^6",
+    "flow-bin": "^0.114",
+    "husky": "^3.1.0",
+    "prettier": "^1.19.1"
+  },
+  "peerDependencies": {
+    "babel-plugin-module-resolver-babel-module": "^5.1.0",
+    "eslint": "^6",
+    "flow-bin": ">=0.114",
+    "prettier": ">=1.19",
+    "typescript": ">=3"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.11.0",
+    "@typescript-eslint/parser": "^2.11.0",
+    "eslint-config-airbnb": "^18.0.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-import-resolver-babel-module": "^5.1.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-flowtype": "^4.5.2",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "eslint-plugin-sonarjs": "^0.5.0",
+    "eslint-plugin-unicorn": "^14.0.1"
+  },
+  "scripts": {
+    "postinstall": "npm install --package-lock-only"
+  },
+  "lint-staged": {
+    "*.js": [
+      "flow focus-check",
+      "eslint --report-unused-disable-directives --quiet --fix",
+      "git-add"
+    ]
   }
 }

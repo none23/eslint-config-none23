@@ -94,7 +94,7 @@ module.exports = {
     'react/jsx-indent-props': 'off',
     'react/jsx-wrap-multilinis': 'off',
     'react/sort-comp': 'off',
-    'react/jsx-props-no-spreading': 'off',// todo
+    'react/jsx-props-no-spreading': 'off', // todo
 
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
@@ -104,6 +104,17 @@ module.exports = {
     // 'graphql/template-strings': ['error', { env: 'apollo', validators: 'all' }],
   },
   overrides: [
+    {
+      files: [
+        '**/*.test.js',
+        '**/*.test.ts',
+        '**/*.test.tsx',
+        '**/*.spec.js',
+        '**/*.spec.ts',
+        '**/*.spec.tsx',
+      ],
+      env: { jest: true },
+    },
     {
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',

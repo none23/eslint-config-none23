@@ -1,0 +1,14 @@
+// @flow strict
+
+module.exports = {
+  plugins: [
+    [
+      'module-resolver',
+      {
+        root: ['.'],
+        alias: {
+        },
+      },
+    ],
+  ],
+};

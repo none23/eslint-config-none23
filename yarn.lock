@@ -85,7 +85,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^2.16.0":
+"@typescript-eslint/eslint-plugin@npm:^2.23.0":
   version: 2.23.0
   resolution: "@typescript-eslint/eslint-plugin@npm:2.23.0"
   dependencies:
@@ -118,7 +118,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^2.16.0":
+"@typescript-eslint/parser@npm:^2.23.0":
   version: 2.23.0
   resolution: "@typescript-eslint/parser@npm:2.23.0"
   dependencies:
@@ -626,7 +626,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-airbnb@npm:^18.0.0":
+"eslint-config-airbnb@npm:^18.1.0":
   version: 18.1.0
   resolution: "eslint-config-airbnb@npm:18.1.0"
   dependencies:
@@ -647,23 +647,23 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "eslint-config-none23@workspace:."
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^2.16.0
-    "@typescript-eslint/parser": ^2.16.0
+    "@typescript-eslint/eslint-plugin": ^2.23.0
+    "@typescript-eslint/parser": ^2.23.0
     eslint: ^6.8.0
-    eslint-config-airbnb: ^18.0.0
-    eslint-config-prettier: ^6.9.0
+    eslint-config-airbnb: ^18.1.0
+    eslint-config-prettier: ^6.10.0
     eslint-import-resolver-typescript: ^2.0.0
-    eslint-plugin-babel: ^5.1.0
+    eslint-plugin-babel: ^5.3.0
     eslint-plugin-flowtype: ^4.6.0
-    eslint-plugin-import: ^2.20.0
+    eslint-plugin-import: ^2.20.1
     eslint-plugin-jsx-a11y: ^6.2.3
-    eslint-plugin-prettier: ^3.1.1
-    eslint-plugin-react: ^7.18.0
-    eslint-plugin-react-hooks: ^2.3.0
+    eslint-plugin-prettier: ^3.1.2
+    eslint-plugin-react: ^7.19.0
+    eslint-plugin-react-hooks: ^2.5.0
     eslint-plugin-sonarjs: ^0.5.0
     eslint-plugin-unicorn: ^17.2.0
     flow-bin: ^0.120.1
-    husky: ^4.0.10
+    husky: ^4.2.3
     prettier: ^1.19.1
     yarn: ^2.0.0-rc.27
   peerDependencies:
@@ -674,7 +674,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-prettier@npm:^6.9.0":
+"eslint-config-prettier@npm:^6.10.0":
   version: 6.10.0
   resolution: "eslint-config-prettier@npm:6.10.0"
   dependencies:
@@ -723,7 +723,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-babel@npm:^5.1.0":
+"eslint-plugin-babel@npm:^5.3.0":
   version: 5.3.0
   resolution: "eslint-plugin-babel@npm:5.3.0"
   dependencies:
@@ -745,7 +745,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-import@npm:^2.20.0":
+"eslint-plugin-import@npm:^2.20.1":
   version: 2.20.1
   resolution: "eslint-plugin-import@npm:2.20.1"
   dependencies:
@@ -786,7 +786,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-prettier@npm:^3.1.1":
+"eslint-plugin-prettier@npm:^3.1.2":
   version: 3.1.2
   resolution: "eslint-plugin-prettier@npm:3.1.2"
   dependencies:
@@ -798,7 +798,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:^2.3.0":
+"eslint-plugin-react-hooks@npm:^2.5.0":
   version: 2.5.0
   resolution: "eslint-plugin-react-hooks@npm:2.5.0"
   peerDependencies:
@@ -807,7 +807,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react@npm:^7.18.0":
+"eslint-plugin-react@npm:^7.19.0":
   version: 7.19.0
   resolution: "eslint-plugin-react@npm:7.19.0"
   dependencies:
@@ -1235,7 +1235,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^4.0.10":
+"husky@npm:^4.2.3":
   version: 4.2.3
   resolution: "husky@npm:4.2.3"
   dependencies:

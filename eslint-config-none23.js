@@ -1,5 +1,17 @@
 // @flow strict
 
+const presets = [
+  'airbnb',
+  'airbnb/hooks',
+  'plugin:import/errors',
+  'plugin:import/warnings',
+  'plugin:react/recommended',
+  'plugin:sonarjs/recommended',
+  'plugin:unicorn/recommended',
+  'prettier',
+  'prettier/react',
+  'prettier/unicorn',
+];
 const plugins = [
   'babel',
   'import',
@@ -11,22 +23,10 @@ const plugins = [
 ];
 
 module.exports = {
-  extends: [
-    'airbnb',
-    'airbnb/hooks',
-    'plugin:react/recommended',
-    'plugin:flowtype/recommended',
-    'plugin:sonarjs/recommended',
-    'plugin:unicorn/recommended',
-    'prettier',
-    'prettier/react',
-    'prettier/unicorn',
-    'prettier/flowtype',
-  ],
-
+  extends: [...presets, 'plugin:flowtype/recommended', 'prettier/flowtype'],
   plugins: [...plugins, 'flowtype'],
   settings: {
-    'import/resolver': { 'babel-module': {} },
+    'import/extensions': ['.js', '.mjs', '.ts', '.jsx', '.tsx'],
   },
 
   rules: {
@@ -118,6 +118,7 @@ module.exports = {
     {
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
+      extends: [...presets, 'plugin:import/typescript'],
       parserOptions: {
         ecmaVersion: 2018,
         sourceType: 'module',
@@ -127,8 +128,11 @@ module.exports = {
       plugins: [...plugins, '@typescript-eslint'],
       settings: { 'import/resolver': { typescript: {} } },
       rules: {
+        'no-unused-vars': 'off',
         'babel/no-unused-vars': 'off',
-        'flowtype/require-valid-file-annotation': 'error',
+        'flowtype/define-flow-type': 'off',
+        'flowtype/require-valid-file-annotation': 'off',
+        'flowtype/use-flow-type': 'off',
       },
     },
   ],

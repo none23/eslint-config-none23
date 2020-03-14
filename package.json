@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23",
-  "version": "10.1.0",
+  "version": "10.1.1",
   "description": "My eslint config for react with typescript and flow",
   "main": "eslint-config-none23.js",
   "files": [

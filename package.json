@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-none23",
-  "version": "10.1.2",
+  "version": "10.2.1",
   "description": "My eslint config for react with typescript and flow",
   "main": "eslint-config-none23.js",
   "files": [
@@ -33,6 +33,7 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.23.0",
     "@typescript-eslint/parser": "^2.23.0",
+    "babel-eslint": "^10.1.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-import-resolver-typescript": "^2.0.0",

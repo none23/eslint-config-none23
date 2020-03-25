@@ -1,13 +1,11 @@
 {
   "name": "eslint-config-none23",
-  "version": "10.2.1",
+  "version": "10.3.0",
   "description": "My eslint config for react with typescript and flow",
   "main": "eslint-config-none23.js",
   "files": [
     "eslint-config-none23.js",
-    "package-lock.json",
-    "yarn.lock",
-    "babel-config.js"
+    "eslint-config-none23.ts"
   ],
   "license": "MIT",
   "author": {
@@ -20,33 +18,34 @@
   },
   "devDependencies": {
     "eslint": "^6.8.0",
-    "flow-bin": "^0.120.1",
-    "husky": "^4.2.3",
-    "prettier": "^1.19.1"
+    "flow-bin": "^0.123.0",
+    "prettier": "^2.0.2"
   },
   "peerDependencies": {
-    "eslint": "^6",
-    "flow-bin": ">=0.114",
-    "prettier": ">=1.19",
-    "typescript": ">=3"
+    "eslint": ">=6.8",
+    "flow-bin": ">=0.123.0",
+    "prettier": ">=2.0.2",
+    "typescript": ">=3.8.3"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.23.0",
-    "@typescript-eslint/parser": "^2.23.0",
+    "@typescript-eslint/eslint-plugin": "^2.28.0",
+    "@typescript-eslint/parser": "^2.28.0",
     "babel-eslint": "^10.1.0",
     "eslint-config-airbnb": "^18.1.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-flowtype": "^4.6.0",
+    "eslint-plugin-flowtype": "^4.7.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^2.5.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
     "eslint-plugin-sonarjs": "^0.5.0",
-    "eslint-plugin-unicorn": "^17.2.0",
-    "yarn": "^2.0.0-rc.27"
+    "eslint-plugin-unicorn": "^18.0.1",
+    "yarn": "latest"
+  },
+  "scripts": {
+    "prepublishOnly": "node ./copy-as-ts.js"
   },
   "lint-staged": {
     "*.js": [

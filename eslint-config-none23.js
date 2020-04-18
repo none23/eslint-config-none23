@@ -12,6 +12,7 @@ const presets = [
   'prettier/react',
   'prettier/unicorn',
 ];
+
 const plugins = [
   'babel',
   'import',
@@ -22,87 +23,100 @@ const plugins = [
   'react-hooks',
 ];
 
+const rules = {
+  'no-else-return': 'off',
+  'no-console': 'warn',
+  'no-debugger': 'warn',
+  'no-multiple-empty-lines': ['error', { max: 3, maxEOF: 0 }],
+
+  'no-underscore-dangle': 'off',
+  'no-unused-expressions': [
+    'error',
+    {
+      allowShortCircuit: true,
+      allowTernary: true,
+      allowTaggedTemplates: true,
+    },
+  ],
+  'no-useless-computed-key': 'error',
+  'no-useless-constructor': 'error',
+  'no-useless-rename': [
+    'warn',
+    { ignoreDestructuring: false, ignoreImport: false, ignoreExport: false },
+  ],
+  'padded-blocks': ['error', { blocks: 'never', switches: 'never', classes: 'never' }],
+  'prefer-const': 'error',
+
+  camelcase: 'off',
+  'babel/camelcase': 'off',
+
+  'spaced-comment': ['warn', 'always', { markers: ['/'] }],
+
+  'import/default': 'warn',
+  'import/named': 'warn',
+  'import/namespace': 'error',
+  'import/extensions': ['warn', 'never'],
+
+  'sonarjs/no-duplicate-string': ['error', 5],
+
+  'unicorn/filename-case': 'off',
+  'unicorn/catch-error-name': ['warn', { name: 'err' }],
+  'unicorn/prevent-abbreviations': [
+    'off',
+    {
+      words: {
+        props: false,
+        src: false,
+        env: false,
+        dev: false,
+        err: false,
+        ctx: false,
+        args: false,
+      },
+    },
+  ],
+
+  'jsx-a11y/anchor-is-valid': 'off', // next.js
+  'jsx-a11y/aria-props': 'error',
+  'jsx-a11y/aria-role': 'error',
+  'jsx-a11y/heading-has-content': 'error',
+  'jsx-a11y/href-no-hash': 'off',
+  'jsx-a11y/label-has-for': 'off',
+  'jsx-a11y/mouse-events-have-key-events': 'error',
+  'jsx-a11y/role-has-required-aria-props': 'error',
+  'jsx-a11y/role-supports-aria-props': 'error',
+  'jsx-a11y/img-redundant-alt': 'error',
+  'jsx-a11y/no-access-key': 'error',
+
+  'react/jsx-indent': 'off',
+  'react/require-default-props': 'off',
+  'react/forbid-prop-types': ['error', { forbid: ['any'] }],
+  'react/default-props-match-prop-types': 'off', // flow/ts
+  'react/jsx-curly-brace-presence': 'off', // styled-jsx
+  'react/jsx-filename-extension': ['error', { extensions: ['.js', '.mjs', '.tsx'] }],
+  'react/no-array-index-key': 'off',
+  'react/no-unused-prop-types': 'off', // flow/ts
+  'react/jsx-indent-props': 'off',
+  'react/jsx-wrap-multilinis': 'off',
+  'react/sort-comp': 'off',
+  'react/jsx-props-no-spreading': 'off', // todo
+
+  'react-hooks/rules-of-hooks': 'error',
+  'react-hooks/exhaustive-deps': 'warn',
+
+  // 'emotion/jsx-import': 'error',
+  // 'emotion/syntax-preference': ['error', 'object'],
+  // 'graphql/template-strings': ['error', { env: 'apollo', validators: 'all' }],
+};
+
 module.exports = {
-  extends: [...presets, 'plugin:flowtype/recommended', 'prettier/flowtype'],
-  plugins: [...plugins, 'flowtype'],
+  extends: presets,
+  plugins,
   settings: {
     'import/extensions': ['.js', '.mjs', '.ts', '.jsx', '.tsx'],
   },
 
-  rules: {
-    'no-else-return': 'off',
-    'no-console': 'warn',
-    'no-debugger': 'warn',
-    'no-multiple-empty-lines': ['error', { max: 3, maxEOF: 0 }],
-
-    'no-underscore-dangle': 'off',
-    'no-unused-expressions': [
-      'error',
-      {
-        allowShortCircuit: true,
-        allowTernary: true,
-        allowTaggedTemplates: true,
-      },
-    ],
-    'no-useless-computed-key': 'error',
-    'no-useless-constructor': 'error',
-    'no-useless-rename': [
-      'warn',
-      { ignoreDestructuring: false, ignoreImport: false, ignoreExport: false },
-    ],
-    'padded-blocks': ['error', { blocks: 'never', switches: 'never', classes: 'never' }],
-    'prefer-const': 'error',
-
-    camelcase: 'off',
-    'babel/camelcase': 'warn',
-
-    'import/default': 'warn',
-    'import/named': 'warn',
-    'import/namespace': 'error',
-    'import/extensions': ['warn', 'never'],
-
-    'sonarjs/no-duplicate-string': ['error', 5],
-
-    'unicorn/filename-case': 'off',
-    'unicorn/catch-error-name': ['warn', { name: 'err' }],
-    'unicorn/prevent-abbreviations': 'off',
-
-    'flowtype/define-flow-type': 'error',
-    'flowtype/require-valid-file-annotation': 'error',
-    'flowtype/use-flow-type': 'error',
-
-    'jsx-a11y/anchor-is-valid': 'off', // next.js
-    'jsx-a11y/aria-props': 'error',
-    'jsx-a11y/aria-role': 'error',
-    'jsx-a11y/heading-has-content': 'error',
-    'jsx-a11y/href-no-hash': 'off',
-    'jsx-a11y/label-has-for': 'off',
-    'jsx-a11y/mouse-events-have-key-events': 'error',
-    'jsx-a11y/role-has-required-aria-props': 'error',
-    'jsx-a11y/role-supports-aria-props': 'error',
-    'jsx-a11y/img-redundant-alt': 'error',
-    'jsx-a11y/no-access-key': 'error',
-
-    'react/jsx-indent': 'off',
-    'react/require-default-props': 'off',
-    'react/forbid-prop-types': ['error', { forbid: ['any'] }],
-    'react/default-props-match-prop-types': 'off', // flow/ts
-    'react/jsx-curly-brace-presence': 'off', // styled-jsx
-    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.mjs', '.tsx'] }],
-    'react/no-array-index-key': 'off',
-    'react/no-unused-prop-types': 'off', // flow/ts
-    'react/jsx-indent-props': 'off',
-    'react/jsx-wrap-multilinis': 'off',
-    'react/sort-comp': 'off',
-    'react/jsx-props-no-spreading': 'off', // todo
-
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
-
-    // 'emotion/jsx-import': 'error',
-    // 'emotion/syntax-preference': ['error', 'object'],
-    // 'graphql/template-strings': ['error', { env: 'apollo', validators: 'all' }],
-  },
+  rules,
   overrides: [
     {
       files: [
@@ -127,6 +141,7 @@ module.exports = {
       },
       plugins: [...plugins, '@typescript-eslint'],
       rules: {
+        ...rules,
         'no-restricted-globals': [
           // (see https://github.com/microsoft/TypeScript/issues/14306)
           'error',

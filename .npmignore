@@ -1,0 +1,5 @@
+.vscode
+.eslintrc
+.flowconfig
+.prettierrc
+copy-as-ts.js

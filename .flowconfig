@@ -20,12 +20,11 @@ esproposal.nullish_coalescing=enable
 esproposal.export_star_as=enable
 experimental.const_params=true
 include_warnings=true
-max_header_tokens=1
+max_header_tokens=2
 module.use_strict=true
 module.file_ext=.js
 module.file_ext=.mjs
 module.file_ext=.json
-module.system.node.resolve_dirname=node_modules
 traces=2
 
 
